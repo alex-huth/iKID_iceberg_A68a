@@ -1,4 +1,9 @@
-results/
-oldnc/
-oldnc2/
-csvresults/
+/*
+!/makeberg
+!/RESTART
+!/INPUT
+!long_run_for_paper.sh
+!long_run.nml
+!/data
+!animate_trajectories.py
+!README

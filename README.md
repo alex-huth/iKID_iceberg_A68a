@@ -1,6 +1,8 @@
-# KID (icebergs)
+# KID/iKID (icebergs)
 
 [![Documentation Status](https://readthedocs.org/projects/kid/badge/?version=latest)](https://kid.readthedocs.io/en/latest/?badge=latest)
+
+This is the source code for Huth et al. (2022) Ocean currents break up a tabular iceberg. It includes the iKID module, the A68 data/model input files, and post-processing scripts.
 
 # What files are what
 
@@ -9,8 +11,13 @@
 | src/              | Source code for icebergs |
 | driver/           | A driver for creating a stand-alone (uncoupled to ocean/atmosphere) model |
 | build/            | A workspace for building a stand alone executable using src/ and driver/ |
-| tests/            | Test cases |
+| tests/            | Test cases (A68) |
 | docs/             | A workspace for generating documentation with doxygen and sphinx |
+| postprocessing/   | Post-processing for generating the figures in the paper |
+
+# Installation
+
+The KID/iKID module requires an installation of MOM6. See https://github.com/NOAA-GFDL/MOM6-examples, and wiki therein. After installing MOM6, replace MOM6-examples/src/icebergs with this module. The A68a test relies on the stand-alone driver provided in the current repository. Build instructions are in build/README.
 
 # Disclaimer
 

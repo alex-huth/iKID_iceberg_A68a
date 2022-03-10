@@ -16,7 +16,7 @@ import netCDF4 as nc
 
 
 import sys
-pypath = '/lustre/f2/dev/gfdl/Alexander.Huth/MOM6-examples/src/icebergs/tests/Iceberg_repository'
+pypath = './../../Iceberg_repository'
 for dir_name in os.listdir(pypath):
         dir_path = os.path.join(pypath, dir_name)
         if os.path.isdir(dir_path):
